@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Luxury Jewelry</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+
+            <img src="images/hinh5.png">
+
+            <span>Luxury Jewelry</span>
+
+        </div>
+
+        <nav class="menu" id="menu">
+
+            <ul>
+
+                <li><a href="index.html">Trang chủ</a></li>
+
+                <li><a href="trangsuc.html">Trang sức</a></li>
+
+                <li><a href="nhancuoi.html">Nhẫn cưới</a></li>
+
+                <li><a href="quatang.html">Quà tặng</a></li>
+
+                <li><a href="bosuutap.html">Bộ sưu tập</a></li>
+
+                 <li><a href="lienhe.html">Liên Hệ</a></li>
+
+                
+
+            </ul>
+
+        </nav>
+
+        <div class="icons">
+
+            <div class="search-box">
+
+                <input type="text"
+                    id="search"
+                    placeholder="Tìm sản phẩm..."
+                    onkeyup="searchProduct()">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+            <div class="cart-icon"
+                onclick="openCart()">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="banner">
+
+        <div class="banner-text">
+
+            <h2>Luxury Jewelry</h2>
+
+            <p>
+                Tỏa sáng cùng vẻ đẹp đẳng cấp
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="products">
+
+        <h2>Sản phẩm nổi bật</h2>
+
+        <div class="product-list">
+
+            <div class="product">
+
+                <img src="images/hinh1.png">
+
+                <h3>Nhẫn vàng 18K</h3>
+
+                <p class="price">
+                    5.000.000đ
+                </p>
+
+                <button
+                    onclick="addToCart('Nhẫn vàng 18K',5000000)">
+                    Thêm vào giỏ
+                </button>
+
+                <button
+                    onclick="buyNow('Nhẫn vàng 18K',5000000)">
+                    Mua ngay
+                </button>
+
+            </div>
+
+            <div class="product">
+
+                <img src="images/hinh2.png">
+
+                <h3>Dây chuyền cao cấp</h3>
+
+                <p class="price">
+                    5.500.000đ
+                </p>
+
+                <button
+                    onclick="addToCart('Dây chuyền cao cấp',5500000)">
+                    Thêm vào giỏ
+                </button>
+
+                <button
+                    onclick="buyNow('Dây chuyền cao cấp',5500000)">
+                    Mua ngay
+                </button>
+
+            </div>
+
+            <div class="product">
+
+                <img src="images/hinh3.png">
+
+                <h3>Bông tai luxury</h3>
+
+                <p class="price">
+                    8.000.000đ
+                </p>
+
+                <button
+                    onclick="addToCart('Bông tai luxury',8000000)">
+                    Thêm vào giỏ
+                </button>
+
+                <button
+                    onclick="buyNow('Bông tai luxury',8000000)">
+                    Mua ngay
+                </button>
+
+            </div>
+
+            <div class="product">
+
+                <img src="images/hinh4.png">
+
+                <h3>Vòng tay vàng</h3>
+
+                <p class="price">
+                    7.500.000đ
+                </p>
+
+                <button
+                    onclick="addToCart('Vòng tay vàng',7500000)">
+                    Thêm vào giỏ
+                </button>
+
+                <button
+                    onclick="buyNow('Vòng tay vàng',7500000)">
+                    Mua ngay
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="cart-popup"
+        class="cart-popup">
+
+        <div class="cart-content">
+
+            <span class="close-cart"
+                onclick="closeCart()">
+                &times;
+            </span>
+
+            <h2>Giỏ hàng</h2>
+
+            <div id="cart-items"></div>
+
+            <h3 id="total-price">
+                Tổng: 0đ
+            </h3>
+
+            <button class="checkout-btn"
+                onclick="checkout()">
+
+                Thanh toán
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-box">
+
+            <h3>Luxury Jewelry</h3>
+
+            <p>
+                Trang sức cao cấp dành cho bạn
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Thông tin liên hệ</h3>
+
+            <p>
+                30/19 Bình Thới Q11
+            </p>
+
+            <p>
+                090825901x
+            </p>
+
+            <p>
+                luxuryjewelry@gmail.com
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

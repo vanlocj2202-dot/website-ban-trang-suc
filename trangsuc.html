@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Trang sức</title>
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+
+            <img src="images/hinh5.png">
+
+            <span>Luxury Jewelry</span>
+
+        </div>
+
+        <nav class="menu">
+
+            <ul>
+
+          <li><a href="index.html">Trang chủ</a></li>
+
+                <li><a href="trangsuc.html">Trang sức</a></li>
+
+                <li><a href="nhancuoi.html">Nhẫn cưới</a></li>
+
+                <li><a href="quatang.html">Quà tặng</a></li>
+
+                <li><a href="bosuutap.html">Bộ sưu tập</a></li>
+
+                 <li><a href="lienhe.html">Liên Hệ</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <section class="products">
+
+        <h2>Trang sức cao cấp</h2>
+
+        <div class="product-list">
+
+            <div class="product">
+
+                <img src="images/trangsuc1.webp">
+
+                <h3>Dây chuyền kim cương</h3>
+
+                <p class="price">
+                    9.000.000đ
+                </p>
+
+                <button
+                    onclick="addToCart('Dây chuyền kim cương',9000000)">
+                    Thêm vào giỏ
+                </button>
+
+                <button
+                    onclick="buyNow('Dây chuyền kim cương',9000000)">
+                    Mua ngay
+                </button>
+
+            </div>
+
+            <div class="product">
+
+                <img src="images/trangsuc2.png">
+
+                <h3>Vòng cổ luxury</h3>
+
+                <p class="price">
+                    12.000.000đ
+                </p>
+
+                <button
+                    onclick="addToCart('Vòng cổ luxury',12000000)">
+                    Thêm vào giỏ
+                </button>
+
+                <button
+                    onclick="buyNow('Vòng cổ luxury',12000000)">
+                    Mua ngay
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
